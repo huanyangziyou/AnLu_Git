@@ -1,0 +1,95 @@
+# ============================================================
+# 通用项目 .gitignore
+# 用法：按实际技术栈取消或增删对应段落，不要一股脑全留
+# ============================================================
+
+# ---------- 1. 操作系统垃圾文件 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+*~
+*.tmp
+*.temp
+*.log
+logs/
+
+# ---------- 2. 编辑器 / IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+!/.vscode/extensions.json
+
+# ---------- 3. Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# ---------- 4. Node / 前端 ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+.npm/
+
+# ---------- 5. Java / C# / 构建产物 ----------
+target/
+bin/
+obj/
+*.class
+*.jar
+*.war
+*.dll
+*.exe
+*.pdb
+
+# ---------- 6. 大文件 / 二进制（按需放开白名单）----------
+*.zip
+*.7z
+*.rar
+*.tar.gz
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.mp3
+*.wav
+*.psd
+*.ai
+*.fig
+*.blend
+
+# ---------- 7. 本地临时与私密 ----------
+_tmp/
+temp/
+tmp/
+*.bak
+*.orig
+*.rej
+_secrets/
+*.pem
+*.key
+id_rsa*
+id_dsa*
+*.htpasswd
+
+# ---------- 8. 项目自定义（按需取消注释）----------
+# data/
+# models/
+# outputs/
+# notebooks/.ipynb_checkpoints/
